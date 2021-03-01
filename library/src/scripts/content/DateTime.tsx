@@ -86,14 +86,14 @@ export default class DateTime extends Component<IDateTimeProps> {
                     hour: "numeric",
                     minute: "numeric",
                     timeZone: this.props.timezone,
-                };
+                } as const;
             default:
                 return {
                     year: "numeric",
                     month: "short",
                     day: "numeric",
                     timeZone: this.props.timezone,
-                };
+                } as const;
         }
     }
 
